@@ -46,23 +46,22 @@ int main(void)
 {
 
     #ifdef TEST
-        startTesting(17);
-        //startTesting(1);OK
-        //startTesting(2);OK
-        //startTesting(3);OK
-        //startTesting(4);OK
-        //startTesting(5);OK
-        //startTesting(6);OK
-        //startTesting(7);OK
-        //startTesting(8);OK
-        //startTesting(9);OK
-        //startTesting(10);OK
-        //startTesting(11);OK
-        //startTesting(12);OK
-        //startTesting(13);OK
-        //startTesting(14);OK
-        //startTesting(15);MAAAAAAAAL80%
-        //startTesting(16);OK
+        //startTesting(1);
+        //startTesting(2);
+        //startTesting(3);
+        //startTesting(4);
+        //startTesting(5);
+        //startTesting(6);
+        //startTesting(7);
+        //startTesting(8);
+        //startTesting(9);
+        //startTesting(10);
+        //startTesting(11);
+        //startTesting(12);
+        //startTesting(13);
+        //startTesting(14);
+        //startTesting(15);
+        //startTesting(16);
         //startTesting(17);
     #else
         //run();
