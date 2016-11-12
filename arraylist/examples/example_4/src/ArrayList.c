@@ -225,7 +225,7 @@ int al_clear(ArrayList* pList)
     {
         free(pList->pElements);
         pList->size = 0;
-        resizeDown(pList);//SE DEBERIA HACER RESIZE DOWN
+        resizeDown(pList);
         returnAux = 0;
     }
     return returnAux;
@@ -343,7 +343,7 @@ int al_isEmpty(ArrayList* pList)
  * \return int Return (NULL) if Error [pList is NULL pointer or invalid index]
  *                  - ( element pointer) if Ok
  */
-void* al_pop(ArrayList* pList,int index)//NO FUNCIONA
+void* al_pop(ArrayList* pList,int index)
 {
     void* returnAux = NULL;
     int aux,i;
@@ -386,11 +386,11 @@ ArrayList* al_subList(ArrayList* pList,int from,int to)
     if(pList != NULL && from >= 0 && from <= to && to <= pList->size)
     {
         pList2 = al_newArrayList();
-        if(pList2 != NULL)///otra validacion que el size-reserve tiene que ser = o mayor que los datos que le voy a pasar.
+        if(pList2 != NULL)
         {
             for(i=from;i<to;i++)
             {
-               pElement2 = al_get(pList,i);//tomo los elementos del array y los voy pasando al puntero void
+               pElement2 = al_get(pList,i);
                aux = al_add(pList2,pElement2);
             }
             if(al_isEmpty(pList2) == 0)
