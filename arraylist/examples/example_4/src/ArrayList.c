@@ -241,9 +241,24 @@ int al_clear(ArrayList* pList)
 ArrayList* al_clone(ArrayList* pList)
 {
     ArrayList* returnAux = NULL;
+    ArrayList* pList2 = NULL;
+    void* pElement2;
+    int i;
     if(pList != NULL)
     {
-        returnAux = pList;
+        pList2 = al_newArrayList();
+        if(pList2 != NULL)
+        {
+            for(i=0;i<al_len(pList);i++)
+            {
+                pElement2 = al_get(pList,i);
+                al_add(pList2,pElement2);
+            }
+            if(pList->size == pList2->size)
+            {
+                return pList2;
+            }
+        }
     }
     return returnAux;
 }
